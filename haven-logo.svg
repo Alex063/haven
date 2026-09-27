@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="cyanBlue" x1="180" y1="160" x2="830" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67F0FF"/>
+      <stop offset="0.42" stop-color="#18B8F4"/>
+      <stop offset="1" stop-color="#1555E8"/>
+    </linearGradient>
+    <linearGradient id="blueDeep" x1="260" y1="270" x2="760" y2="870" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#28D7FF"/>
+      <stop offset="0.5" stop-color="#087CF1"/>
+      <stop offset="1" stop-color="#173BE0"/>
+    </linearGradient>
+    <linearGradient id="person" x1="390" y1="410" x2="690" y2="790" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C9FAFF"/>
+      <stop offset="0.45" stop-color="#63DFFF"/>
+      <stop offset="1" stop-color="#1264E8"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#087CF1" flood-opacity=".22"/>
+    </filter>
+  </defs>
+
+  <!-- Outer protective house/shield -->
+  <g filter="url(#shadow)">
+    <!-- shield body -->
+    <path d="M512 190
+             L842 414
+             C858 425 866 443 866 462
+             L866 625
+             C866 742 794 836 700 892
+             L512 1000
+             L324 892
+             C230 836 158 742 158 625
+             L158 462
+             C158 443 166 425 182 414
+             Z"
+          fill="url(#blueDeep)"/>
+
+    <!-- roof ribbon -->
+    <path d="M112 438
+             C104 425 108 405 122 394
+             L465 150
+             C494 129 530 129 559 150
+             L912 402
+             C928 414 932 436 921 452
+             L892 494
+             C881 510 858 514 842 503
+             L512 268
+             L184 503
+             C167 515 144 511 133 494
+             Z"
+          fill="url(#cyanBlue)"/>
+
+    <!-- chimney -->
+    <path d="M694 244 L694 174 C694 155 709 140 728 140 L780 140 C799 140 814 155 814 174 L814 330 Z"
+          fill="url(#blueDeep)"/>
+
+    <!-- inner opening -->
+    <path d="M272 472
+             L512 301
+             L752 472
+             L752 622
+             C752 704 703 768 631 811
+             L512 879
+             L393 811
+             C321 768 272 704 272 622 Z"
+          fill="#071329"/>
+  </g>
+
+  <!-- Family: two adults embracing a child -->
+  <g>
+    <!-- left adult -->
+    <circle cx="405" cy="498" r="62" fill="url(#person)"/>
+    <path d="M313 680
+             C318 589 354 548 414 548
+             C472 548 506 591 512 680
+             L512 746
+             L334 746
+             C321 729 315 706 313 680 Z"
+          fill="url(#person)"/>
+
+    <!-- right adult -->
+    <circle cx="619" cy="523" r="57" fill="url(#person)"/>
+    <path d="M531 696
+             C536 608 569 568 626 568
+             C681 568 713 610 718 696
+             L718 748
+             L538 748
+             C532 731 530 713 531 696 Z"
+          fill="url(#person)"/>
+
+    <!-- child -->
+    <circle cx="514" cy="586" r="39" fill="url(#person)"/>
+    <path d="M451 739
+             C454 673 476 641 515 641
+             C554 641 577 674 580 739
+             L580 786
+             L451 786 Z"
+          fill="url(#person)"/>
+
+    <!-- embracing inner curves -->
+    <path d="M365 655 C403 624 443 625 480 658"
+          stroke="#8DEEFF" stroke-width="30" stroke-linecap="round" opacity=".72"/>
+    <path d="M548 660 C584 628 625 628 661 658"
+          stroke="#8DEEFF" stroke-width="28" stroke-linecap="round" opacity=".72"/>
+  </g>
+</svg>
